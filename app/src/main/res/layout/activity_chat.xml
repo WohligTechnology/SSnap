@@ -1,0 +1,651 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/loginbtn"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout9">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton2"
+            android:src="@drawable/ic_search"
+            android:background="@android:color/transparent"
+            android:layout_weight="3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/tvHead"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton"
+            android:src="@drawable/ic_right"
+            android:background="@android:color/transparent"
+            android:layout_weight="3"
+            android:onClick="back"/>
+
+    </LinearLayout>
+
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost"
+        android:layout_below="@+id/linearLayout9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="55dp"
+                            android:background="#fff"
+                            android:id="@+id/linearLayout">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="50dp"
+                                android:paddingTop="17dp"
+                                android:background="@drawable/border"
+                                android:layout_marginRight="-1dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Steve Jobs Group"
+                                    android:id="@+id/t1extView2"
+                                    android:textColor="@color/loginbtn"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Apple Inc."
+                                    android:id="@+id/textView3"
+                                    android:textColor="@color/etLabelTextColor" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="5dp">
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:id="@+id/imageView2"
+                                        android:src="@drawable/images" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="256 images"
+                                        android:id="@+id/textView"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="4dp"
+                                        android:textSize="13sp"
+                                        android:textColor="@color/etLabelTextColor" />
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:id="@+id/imageView3"
+                                        android:src="@drawable/video"
+                                        android:layout_marginLeft="13dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="53 videos"
+                                        android:id="@+id/textView8"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="4dp"
+                                        android:textSize="13sp"
+                                        android:textColor="@color/etLabelTextColor" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/iv1"
+                            android:src="@drawable/avatar"
+                            android:background="@drawable/rounded"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="55dp"
+                            android:background="#fff"
+                            android:id="@+id/linearLayout4" >
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="50dp"
+                                android:paddingTop="17dp"
+                                android:background="@drawable/border"
+                                android:layout_marginRight="-1dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Steve Jobs Group"
+                                    android:id="@+id/textView9"
+                                    android:textColor="@color/loginbtn"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Apple Inc."
+                                    android:id="@+id/textView10"
+                                    android:textColor="@color/etLabelTextColor" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="5dp" >
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:id="@+id/imageView4"
+                                        android:src="@drawable/images" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="256 images"
+                                        android:id="@+id/textView11"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="4dp"
+                                        android:textSize="13sp"
+                                        android:textColor="@color/etLabelTextColor" />
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:id="@+id/imageView5"
+                                        android:src="@drawable/video"
+                                        android:layout_marginLeft="13dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="53 videos"
+                                        android:id="@+id/textView12"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="4dp"
+                                        android:textSize="13sp"
+                                        android:textColor="@color/etLabelTextColor" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/iv2"
+                            android:src="@drawable/avatar"
+                            android:background="@drawable/rounded"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="55dp"
+                            android:background="#fff"
+                            android:id="@+id/linearLayout5" >
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="50dp"
+                                android:paddingTop="17dp"
+                                android:background="@drawable/border"
+                                android:layout_marginRight="-1dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Steve Jobs Group"
+                                    android:id="@+id/textView13"
+                                    android:textColor="@color/loginbtn"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Apple Inc."
+                                    android:id="@+id/textView14"
+                                    android:textColor="@color/etLabelTextColor" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="5dp" >
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:id="@+id/imageView7"
+                                        android:src="@drawable/images" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="256 images"
+                                        android:id="@+id/textView15"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="4dp"
+                                        android:textSize="13sp"
+                                        android:textColor="@color/etLabelTextColor" />
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:id="@+id/imageView8"
+                                        android:src="@drawable/video"
+                                        android:layout_marginLeft="13dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="53 videos"
+                                        android:id="@+id/textView16"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="4dp"
+                                        android:textSize="13sp"
+                                        android:textColor="@color/etLabelTextColor" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/iv3"
+                            android:src="@drawable/avatar"
+                            android:background="@drawable/rounded"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="55dp"
+                            android:background="#fff"
+                            android:id="@+id/linearLayout6" >
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="50dp"
+                                android:paddingTop="17dp"
+                                android:background="@drawable/border"
+                                android:layout_marginRight="-1dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Steve Jobs"
+                                    android:id="@+id/textView17"
+                                    android:textColor="@color/loginbtn"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Apple Inc."
+                                    android:id="@+id/textView18"
+                                    android:textColor="@color/etLabelTextColor" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="5dp" >
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:id="@+id/imageView6"
+                                        android:src="@drawable/images" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="256 images"
+                                        android:id="@+id/textView19"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="4dp"
+                                        android:textSize="13sp"
+                                        android:textColor="@color/etLabelTextColor" />
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:id="@+id/imageView9"
+                                        android:src="@drawable/video"
+                                        android:layout_marginLeft="13dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="53 videos"
+                                        android:id="@+id/textView20"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="4dp"
+                                        android:textSize="13sp"
+                                        android:textColor="@color/etLabelTextColor" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/iv4"
+                            android:src="@drawable/avatar"
+                            android:background="@drawable/rounded"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="55dp"
+                            android:background="#fff"
+                            android:id="@+id/linearLayout7" >
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="50dp"
+                                android:paddingTop="17dp"
+                                android:background="@drawable/border"
+                                android:layout_marginRight="-1dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Steve Jobs"
+                                    android:id="@+id/textView21"
+                                    android:textColor="@color/loginbtn"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Apple Inc."
+                                    android:id="@+id/textView22"
+                                    android:textColor="@color/etLabelTextColor" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="5dp" >
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:id="@+id/imageView11"
+                                        android:src="@drawable/images" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="256 images"
+                                        android:id="@+id/textView23"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="4dp"
+                                        android:textSize="13sp"
+                                        android:textColor="@color/etLabelTextColor" />
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:id="@+id/imageView12"
+                                        android:src="@drawable/video"
+                                        android:layout_marginLeft="13dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="53 videos"
+                                        android:id="@+id/textView24"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="4dp"
+                                        android:textSize="13sp"
+                                        android:textColor="@color/etLabelTextColor" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/iv5"
+                            android:src="@drawable/avatar"
+                            android:background="@drawable/rounded"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="55dp"
+                            android:background="#fff"
+                            android:id="@+id/linearLayout8" >
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="50dp"
+                                android:paddingTop="17dp"
+                                android:background="@drawable/border"
+                                android:layout_marginRight="-1dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Steve Jobs"
+                                    android:id="@+id/textView25"
+                                    android:textColor="@color/loginbtn"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Apple Inc."
+                                    android:id="@+id/textView26"
+                                    android:textColor="@color/etLabelTextColor" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="5dp" >
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:id="@+id/imageView14"
+                                        android:src="@drawable/images" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="256 images"
+                                        android:id="@+id/textView27"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="4dp"
+                                        android:textSize="13sp"
+                                        android:textColor="@color/etLabelTextColor" />
+
+                                    <ImageView
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:id="@+id/imageView15"
+                                        android:src="@drawable/video"
+                                        android:layout_marginLeft="13dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="53 videos"
+                                        android:id="@+id/textView28"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="4dp"
+                                        android:textSize="13sp"
+                                        android:textColor="@color/etLabelTextColor" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/iv6"
+                            android:src="@drawable/avatar"
+                            android:background="@drawable/rounded"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

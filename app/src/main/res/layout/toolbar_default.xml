@@ -1,0 +1,38 @@
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/loginbtn"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton2"
+            android:src="@drawable/ic_back"
+            android:background="@android:color/transparent"
+            android:layout_weight="3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/tvHead"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="17dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton"
+            android:src="@drawable/ic_search"
+            android:background="@android:color/transparent"
+            android:layout_weight="3" />
+
+    </LinearLayout>
+
+
